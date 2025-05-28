@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Festival EDC Medellín 2026 - Información del evento, compra de boletas y testimonios de asistentes.">
+  <title>EDC Evento - Compra Boletas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__logo">
+      <img src="Pics/edcr.png" alt="Logo EDC" class="logo-img" />
+      <h1 class="site-title">EDC Medellin 2026</h1>
+    </div>
+    <button id="toggle-dark" aria-label="Alternar modo oscuro">🌓</button>
+  </header>
+
+  <main class="site-main">
+    <section aria-labelledby="compra-boletas" class="content-container">
+      <h2 id="compra-boletas">🎟️ Compra tus boletas para EDC 2026</h2>
+        <p>🎉 Escoge tu tipo de boleta y asegúrate tu lugar para vivir la mejor experiencia.</p>
+
+        <ul>
+          <li>🎫 <strong>Boleta General:</strong> Acceso a todas las áreas generales. Precio: 💰 $580,000 COP.</li>
+          <li>✨ <strong>Boleta VIP:</strong> Acceso a zonas VIP, barras exclusivas y baños privados. Precio: 💰 $1,160,000 COP.</li>
+          <li>🌟 <strong>Boleta Platinum:</strong> Acceso a zonas premium con Meet & Greet con DJs. Precio: 💰 $2,300,000 COP.</li>
+        </ul>
+
+      <a id="whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Enviar mensaje por WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="white" style="vertical-align: middle; margin-right: 8px;">
+    <path d="M20.52 3.478A11.82 11.82 0 0012 0C5.373 0 0 5.372 0 12c0 2.12.56 4.144 1.62 5.94L0 24l6.273-1.61a11.81 11.81 0 005.732 1.48c6.627 0 12-5.372 12-12 0-3.216-1.254-6.236-3.48-8.392zM12 21.6a9.56 9.56 0 01-4.87-1.38l-.35-.21-3.72.956.994-3.625-.228-.37A9.54 9.54 0 012.4 12c0-5.3 4.3-9.6 9.6-9.6 2.56 0 4.97 1 6.77 2.8 1.8 1.8 2.79 4.21 2.79 6.78 0 5.3-4.3 9.6-9.6 9.6zm5.3-7.83c-.29-.14-1.7-.84-1.96-.93-.26-.1-.45-.14-.64.15-.18.28-.7.93-.85 1.12-.15.18-.3.21-.55.07-.25-.14-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.39-1.74-.14-.28-.02-.43.12-.57.12-.12.26-.3.39-.44.13-.15.18-.25.3-.41.12-.15.05-.29-.02-.43-.07-.14-.63-1.52-.87-2.08-.23-.54-.47-.46-.64-.47l-.55-.01c-.18 0-.47.07-.72.35-.25.28-.95.92-.95 2.25s.97 2.61 1.1 2.79c.13.18 1.9 2.9 4.61 4.07.64.28 1.14.45 1.53.58.64.22 1.22.19 1.68.12.51-.08 1.7-.7 1.94-1.37.24-.66.24-1.22.17-1.37-.07-.14-.26-.22-.55-.36z"/>
+  </svg>
+  Contactar por WhatsApp
+</a>
+
+<script>
+  const whatsappBtn = document.getElementById('whatsapp-btn');
+  whatsappBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const nombreProducto = document.getElementById('nombre-producto')?.textContent || 'el producto';
+    const mensaje = `Hola, quiero más información sobre las boletas para el evento EDC 2026 Medellin.`;
+    const numero = '573236285567';
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, '_blank');
+  });
+</script>
+    </section>
+<section aria-labelledby="transporte" class="content-container">
+  <h2 id="transporte">🚗 ¿Cómo llegar al evento?</h2>
+  <p>
+    El festival se llevará a cabo en el estadio
+    <a href="https://www.google.com/maps/place/Estadio+de+F%C3%BAtbol+Atanasio+Girardot/@6.2567723,-75.5927532,17z/data=!3m1!4b1!4m6!3m5!1s0x8e44290e4f870f69:0xf57f97b59ef52c39!8m2!3d6.256767!4d-75.5901729!16zL20vMDhxcTh3?entry=ttu&g_ep=EgoyMDI1MDUyNi4wIKXMDSoASAFQAw%3D%3D" 
+      class="btn" 
+      target="_blank" 
+      rel="noopener noreferrer">
+      🏟️ Atanasio Girardot
+    </a></p>
+    <p>Puedes llegar en <strong>metro 🚇</strong> (estación Estadio) o usar servicios como <strong>Uber 🚕</strong> <strong>Cabify 🚖</strong> <strong>Didi 🚕</strong> entre otros. 
+    Hay parqueaderos disponibles cerca del evento 🅿️.</p>
+</section>
+
+    <section aria-labelledby="preguntas-frecuentes" class="content-container-frec">
+      <h2 id="preguntas-frecuentes">❓ Preguntas Frecuentes</h2>
+      <ul>
+        <li><strong>¿Qué debo llevar al evento?</strong> Lleva tu boleta impresa o en el celular, documento de identidad y ropa cómoda.</li>
+        <li><strong>¿Habrá comida y bebida?</strong> Sí, habrá múltiples opciones de comida y bebida dentro del evento.</li>
+        <li><strong>¿Puedo llevar mi cámara?</strong> No se permiten cámaras profesionales, pero puedes llevar tu celular para fotos.</li>
+      </ul>
+    </section>
+  </main>
+
+  <nav class="main-navigation" aria-label="Navegación principal">
+    <a href="index.html" class="main-navigation__link" aria-current="page">🏠 Inicio</a>
+    <a href="testimonios.html" class="main-navigation__link">💬 Testimonios</a>
+    <a href="boletas.html" class="main-navigation__link">🎟️ Boletas</a>
+  </nav>
+
+  <footer class="site-footer">
+    <p>© 2025 Electric Daisy Carnival Medellin - Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+  const toggleBtn = document.getElementById('toggle-dark');
+  const body = document.body;
+
+  const savedMode = localStorage.getItem('theme');
+  if (savedMode === 'dark') {
+    body.classList.add('dark');
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('dark');
+    const currentMode = body.classList.contains('dark') ? 'dark' : 'light';
+    localStorage.setItem('theme', currentMode);
+  });
+</script>
+
+</body>
+</html>
