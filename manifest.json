@@ -1,0 +1,20 @@
+{
+  "name": "EDC Medellín 2026",
+  "short_name": "EDC",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "Pics/edcr.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "Pics/edcr.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

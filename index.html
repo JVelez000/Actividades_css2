@@ -6,6 +6,9 @@
   <meta name="description" content="Festival EDC Medellín 2026 - Información del evento, compra de boletas y testimonios de asistentes.">
   <title>EDC Evento - Inicio</title>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#111111" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
 <body>
   <header class="site-header">
@@ -62,6 +65,16 @@
     localStorage.setItem('theme', currentMode);
   });
 </script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(() => console.log("✅ Service Worker registrado"))
+      .catch(err => console.error("❌ Error al registrar el Service Worker", err));
+  }
+</script>
+
+<script src="pwa-install.js"></script>
 
 </body>
 </html>
