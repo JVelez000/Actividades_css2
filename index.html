@@ -11,13 +11,13 @@
   <meta name="mobile-web-app-capable" content="yes">
 </head>
 <body>
-  <header class="site-header">
-    <div class="site-header__logo">
-      <img src="Pics/edcr.png" alt="Logo EDC" class="logo-img" />
-      <h1 class="site-title">EDC Medellin 2026</h1>
-    </div>
-    <button id="toggle-dark" aria-label="Alternar modo oscuro">🌓</button>
-  </header>
+<header class="site-header">
+  <div class="site-header__logo">
+    <img src="Pics/edcr.png" alt="Logo EDC" class="logo-img" />
+    <h1 class="site-title">EDC Medellin 2026</h1>
+  </div>
+  <button id="toggle-dark" aria-label="Alternar modo oscuro">🌓</button>
+</header>
 
   <main class="site-main">
   <section aria-labelledby="info-evento" class="content-container">
@@ -73,8 +73,5 @@
       .catch(err => console.error("❌ Error al registrar el Service Worker", err));
   }
 </script>
-
-<script src="pwa-install.js"></script>
-<button id="installBtn" style="display: none;">⬇️ Instalar App</button>
 </body>
 </html>
