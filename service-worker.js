@@ -3,13 +3,12 @@ self.addEventListener('install', event => {
   event.waitUntil(
     caches.open('edc-cache').then(cache => {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/style.css',
-        '/Pics/logo.png',
-        '/Pics/edcr.png',
-        'boletas.html',
-        'testimonios.html',
+        '/Actividades_css2/',
+        '/Actividades_css2/index.html',
+        '/Actividades_css2/style.css',
+        '/Actividades_css2/Pics/edcr.png',
+        '/Actividades_css2/boletas.html',
+        '/Actividades_css2/testimonios.html',
       ]);
     })
   );
