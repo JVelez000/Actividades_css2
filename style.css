@@ -502,3 +502,35 @@ body.dark footer {
   cursor: default;
   transform: scale(1);
 }
+
+/* Splash styles */
+#splash-screen {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(145deg, #111111, #000000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOut 1s ease 2.5s forwards;
+}
+
+.splash-logo {
+  width: 100px;
+  height: 100px;
+  animation: splashScale 2s ease-in-out;
+}
+
+/* Animaciones */
+@keyframes splashScale {
+  0% { transform: scale(0.6); opacity: 0; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
